@@ -1,0 +1,18 @@
+body {
+  margin: 16px;
+  padding: 16px;
+  min-height: 200;
+  max-width: 2560;
+  text-align: center;
+  background: rgb(103, 139, 238);
+  font-family: "JetBrains Mono";
+  font-size: 16px;
+}
+
+/*Responsive*/
+
+@media screen and (min-width: 200px) and (max-width: 2560px) {
+  body {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs 2</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>// Input Tipo "Radio" //</h1>
+    <h3>Choose</h3>
+    <form action="https://example.com">
+      <input type="radio" name="gender" id="Male" /> Male
+      <input type="radio" name="gender" id="Female" /> Female
+      <input type="submit" value="Enviar" />
+    </form>
+    <br />
+    <br />
+    <h2>// Input Tipo "Checkbox" //</h2>
+    <input type="checkbox" name="vehicle1" id="Bike" /> I have a bike
+    <input type="checkbox" name="vehicle2" id="Bike" /> I have a car
+    <input type="submit" value="Enviar" />
+    <br /><br />
+    <h3>// Input tipo "Color" //</h3>
+    <input type="color" name="favcolor" id="favcolor" />
+    <input type="submit" value="Enviar" />
+    <br /><br />
+    <h4>// Input tipo "Data" //</h4>
+    <input type="date" name="data" id="data" />
+    <input type="submit" value="Enviar" />
+    <br /><br />
+    <h5>// Input tipo "E-mail e Senha" //</h5>
+    <form action="email">
+      <label for="email">E-mail: </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Digite seu e-mail"
+      />
+      <label for="password">Senha: </label>
+      <input
+        type="password"
+        name="senha"
+        id="senha"
+        placeholder="Digite sua senha"
+      />
+      <input type="submit" value="Enviar" />
+    </form>
+    <br /><br /><br />
+    <h2>// Input tipo "Arquivo" //</h2>
+    <strong>Select a file: </strong>
+    <input type="file" name="ffile" id="ffile" />
+    <input type="submit" value="Enviar" />
+    <br /><br /><br />
+    <form action="googlesearch">
+      <h2>// Input tipo "Search" //</h2>
+      Search on Google:
+      <input type="search" name="googlesearch" id="ssearch" />
+      <input type="submit" value="Pesquisar" />
+    </form>
+  </body>
+</html>

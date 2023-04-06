@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form page</title>
+  </head>
+  <header style="text-align: center">
+    <hr />
+    <nav>
+      <h1>Formulário</h1>
+    </nav>
+    <hr />
+    <nav>
+      <a href="./index.html">Home</a> | <a href="./andromeda.html">Info</a>
+    </nav>
+    <hr />
+  </header>
+  <body style="text-align: center; display: flexbox">
+    <h2><u>Preencha o formulário com as suas informações:</u></h2>
+    <br /><br />
+    <form action="cadastro">
+      <label for="nome"><strong>Nome: </strong></label>
+      <input type="text" name="nome" id="nome" /> |
+      <label for="sobrenome"><strong>Sobrenome: </strong></label>
+      <input type="text" name="surname" id="surname" />
+      <br />
+      <br />
+      <form action="email">
+        <label for="email"><strong>E-mail:</strong></label>
+        <input type="email" placeholder="Deixe um e-mail para contato" /> |
+        <label for="telefone"><strong>Telefone: </strong></label>
+        <input type="number" name="telefone" id="telefone" />
+      </form>
+      <br /><br />
+      <form action="região">
+        <label for="nacionalidade">
+          <strong>Nacionalidade: </strong>
+          <select name="nacionalidade" id="nacionalidade">
+            <option value="brasileira">Brasileira</option>
+            <option value="brasileira">Americana</option>
+            <option value="brasileira">Espanhola</option>
+            <option value="brasileira">Russa</option>
+            <option value="brasileira">Alemã</option>
+          </select>
+          |
+          <form action="cidade_Estado">
+            <label for="cidade_Estado"><strong>Cidade:</strong></label>
+            <input type="search" name="cidade" id="city" />
+            <label for="state"><strong>Estado: </strong></label>
+            <input type="search" name="estado" id="state" />
+          </form>
+          <br /><br />
+          <form action="born">
+            <label for="born"><strong>Data de nascimento: </strong></label>
+            <input type="date" name="born" id="born" />
+          </form>
+          <br /><br />
+          <input
+            style="
+              width: 150px;
+              height: 30px;
+              background: black;
+              color: white;
+              border-radius: 10px;
+            "
+            type="submit"
+            value="Enviar"
+          />
+        </label>
+      </form>
+    </form>
+    <hr />
+    <footer>
+      <footer>&copy; Copyright 2023 Matheus Augusto</footer>
+    </footer>
+  </body>
+</html>

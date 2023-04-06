@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liga dos Astronautas</title>
+    <link rel="stylesheet" href="../EX_Criando_Form/styles.css" />
+  </head>
+  <h1>Cadastro da Liga dos Astronautas</h1>
+  <br />
+  <body>
+    <form action="cadastro">
+      <label for="nome"><strong>Nome:</strong> </label>
+      <input type="text" name="nome" id="nome" />
+    </form>
+    <br />
+    <form action="cadastro2">
+      <label for="email"><strong>E-mail:</strong> </label>
+      <input type="email" name="email" id="email" /> -
+      <strong>Password: </strong>
+      <input type="password" name="senha" id="senha" />
+    </form>
+    <br />
+    <form action="cadastro3">
+      <label for="dateBorn"><strong>Data de Nascimento: </strong> </label>
+      <input type="date" name="dateBorn" id="dateBorn" /> -
+      <strong>Foto: </strong> <input type="file" name="ffile" id="ffile" />
+    </form>
+    <br />
+    <form action="cadastro4">
+      <label for="nacionalidade"><strong>Nacionalidade: </strong></label>
+      <select name="nacionalidade" id="nacionalidade">
+        <option value="brasileira">Brasileira</option>
+        <option value="americana">Americana</option>
+        <option value="francesa">Francesa</option>
+        <option value="russa">Russa</option>
+        <option value="alema">Alemã</option>
+      </select>
+      - <strong>Genêro</strong> F
+      <input type="radio" name="gender" id="gender" />
+      M
+      <input type="radio" name="gender" id="gender" />
+    </form>
+    <br />
+    <br />
+    <form action="qualidades">
+      <h3>Suas principais qualidades:</h3>
+      <br />
+      <strong>Inteligência: </strong
+      ><input type="checkbox" name="qualitys" id="qualitys" /> |
+      <strong>Resiliência: </strong
+      ><input type="checkbox" name="qualitys" id="qualitys" /> |
+      <strong>Preparo físico: </strong
+      ><input type="checkbox" name="qualitys" id="qualitys" /> |
+      <strong>Educação: </strong
+      ><input type="checkbox" name="qualitys" id="qualitys" />
+    </form>
+    <br />
+    <form action="coment" method="post">
+      <textarea
+        id="comentario"
+        name="comentario"
+        rows="15"
+        cols="50"
+        placeholder="Por que você gostaria de ser um Astronauta ?"
+      ></textarea>
+    </form>
+    <br />
+    <input class="btnCriar" type="submit" value="Criar" />
+  </body>
+</html>
